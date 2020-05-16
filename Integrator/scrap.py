@@ -18,5 +18,4 @@ class Stickers:
         def __init__(self, url):
             self.response = requests.get(url)
             self.page_content = str(self.response.text)
-            self.fundamentalist_data = re.
-            findall(r'\d+,\d+', self.page_content)
+            self.fundamentalist_data = re.findall(r'\d+,\d+', self.page_content)
